@@ -21,6 +21,7 @@ Everything committed here is visible to anyone, including this file, commit mess
 | `js/main.js` | English text (the `en` object at the top), language switch, animations |
 | `css/style.css` | Styles, colour tokens (`:root`), animation keyframes |
 | `assets/fonts/` | Manrope, Greek and Latin subsets, self-hosted |
+| `assets/cards/` | The three card images shown in the hero (temporary, see below) |
 | `README.md` | How to preview, edit and publish, written for a human maintainer |
 
 There is no build step and there are no dependencies. Keep it that way unless asked.
@@ -29,7 +30,7 @@ There is no build step and there are no dependencies. Keep it that way unless as
 
 - **Two languages.** Greek is the default and lives in the HTML. English is in `js/main.js`, matched by the element's `data-i18n` key. Any text change needs both. Product names that are the same in both languages (Booster Packs, Elite Trainer Boxes) have no key.
 - **No third-party requests.** The footer says the site uses no cookies and no tracking. Fonts are self-hosted and the map is a link, not an embed. Adding analytics, an embedded map, a CDN font or a form service makes that statement false, so raise it first.
-- **Original branding only.** Game names appear as text. No Pokémon logos, characters, card layouts or official artwork. The hero cards are abstract on purpose.
+- **Original branding, with one temporary exception.** Game names appear as text, and the site uses no Pokémon logos or official artwork apart from the hero. The hero currently shows three real card images from `assets/cards/` (Charizard in front, Pikachu left, Mew right) at the owner's request. The owner plans to replace them before the shop opens, so do not add more official artwork elsewhere. To go back to original art, restore the `.stage` block and the `.tcg__frame`, `.tcg__top` and `.tcg__art` styles from commit `abf2495`, delete `assets/cards/`, and shorten the footer credit (`footer.disclaimer`).
 - **Unknown details are left off the page.** No bracketed placeholders and no links to `#`. Still unknown: phone, email, social links, opening date, opening hours, legal details (business name, ΑΦΜ, ΔΟΥ, Γ.Ε.ΜΗ.). `README.md` says where each one goes when it arrives.
 - **The address appears in several places.** The address row and map card in `index.html`, two Google Maps links (`query=` parameter), and `visit.address` / `visit.map.city` in `js/main.js`.
 - **Typography.** Manrope for everything. Very wide display faces were tried and rejected because headings looked squashed, especially on phones. Any new font must cover Greek.

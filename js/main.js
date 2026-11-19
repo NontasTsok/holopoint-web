@@ -65,7 +65,7 @@
     'visit.map.cta': 'Open in Google Maps',
     'footer.tag': 'Trading card games in Larisa, Greece.',
     'footer.privacy': 'This website uses no cookies and no tracking tools.',
-    'footer.disclaimer': 'Holopoint is an independent shop. Pokémon and all other game names are trademarks of their respective owners.'
+    'footer.disclaimer': 'Holopoint is an independent shop. Pokémon, the card images and all other game names belong to their respective owners. © Pokémon / Nintendo / Creatures / GAME FREAK.'
   };
 
   var meta = {

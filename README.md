@@ -18,6 +18,7 @@ Then open <http://localhost:8765>. Add `?lang=en` to open it in English.
 | `js/main.js` | English text (the `en` object at the top) and the animations |
 | `css/style.css` | Styles, colours and animation definitions |
 | `assets/fonts/` | Manrope, self-hosted (SIL Open Font License) |
+| `assets/cards/` | The three card images in the hero (temporary; to be replaced before the shop opens) |
 
 When you change a Greek sentence in `index.html`, change the matching English one in `js/main.js`. The two are linked by the `data-i18n` key on the element.
 
