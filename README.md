@@ -22,6 +22,8 @@ Then open <http://localhost:8765>. Add `?lang=en` to open it in English.
 
 When you change a Greek sentence in `index.html`, change the matching English one in `js/main.js`. The two are linked by the `data-i18n` key on the element.
 
+When you change `css/style.css` or `js/main.js`, raise the `?v=` number on both links in `index.html`. Without that, visitors' browsers can show the new page with an old saved stylesheet for a few minutes, and the layout breaks.
+
 ## Details still to add
 
 These were left off the page until they are known:
