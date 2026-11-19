@@ -17,27 +17,20 @@ Then open <http://localhost:8765>. Add `?lang=en` to open it in English.
 | `index.html` | Page structure and all Greek text |
 | `js/main.js` | English text (the `en` object at the top) and the animations |
 | `css/style.css` | Styles, colours and animation definitions |
-| `assets/fonts/` | Syne and Manrope, self-hosted (SIL Open Font License) |
+| `assets/fonts/` | Manrope, self-hosted (SIL Open Font License) |
 
 When you change a Greek sentence in `index.html`, change the matching English one in `js/main.js`. The two are linked by the `data-i18n` key on the element.
 
-## Details still to fill in
+## Details still to add
 
-Every placeholder is marked with a `data-todo` attribute in `index.html`:
+These were left off the page until they are known:
 
-```sh
-grep -n "data-todo" index.html
-```
+- Phone, email and social links: add them as rows in the `visit__list` block in `index.html`, next to the address.
+- Legal details (registered business name, ΑΦΜ, ΔΟΥ, Γ.Ε.ΜΗ. number): add them as a line in the footer.
+- Opening hours: the page reads "Θα ανακοινωθεί σύντομα". The Greek is in `index.html` and the English is `visit.hours` in `js/main.js`.
+- Opening date: the hero badge reads "Ανοίγουμε σύντομα". Swap in the month once it is fixed (`hero.badge` for the English).
 
-- `address`: street address
-- `phone` and `email`: there is an example link format in the comment above each one
-- `instagram`, `facebook`, `tiktok`: the links currently point to `#`
-- `map`: replace the search query in the link with the exact address
-- `legal`: registered business name, ΑΦΜ, ΔΟΥ and Γ.Ε.ΜΗ. number in the footer
-
-Opening hours currently read "Θα ανακοινωθεί σύντομα". The Greek is in `index.html` and the English is `visit.hours` in `js/main.js`.
-
-The hero badge reads "Ανοίγουμε σύντομα". Swap in the month once it is fixed (`hero.badge` for the English).
+The address appears in three places: the address row and the map card in `index.html`, and `visit.address` / `visit.map.city` in `js/main.js`. Both Google Maps links in `index.html` carry it in their `query=` parameter.
 
 ## Publish on GitHub Pages
 

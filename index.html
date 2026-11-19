@@ -11,7 +11,6 @@
   <meta property="og:description" content="Το νέο στέκι για συλλέκτες και παίκτες στη Λάρισα. Ανοίγουμε σύντομα.">
   <meta property="og:locale" content="el_GR">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/syne-greek.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-greek.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.css">
   <script>document.documentElement.classList.add('js');</script>
@@ -36,7 +35,7 @@
         <a href="#products" data-i18n="nav.products">Προϊόντα</a>
         <a href="#shop" data-i18n="nav.shop">Το κατάστημα</a>
         <a href="#events" data-i18n="nav.events">Events</a>
-        <a href="#visit" data-i18n="nav.visit">Επικοινωνία</a>
+        <a href="#visit" data-i18n="nav.visit">Τοποθεσία</a>
       </nav>
       <div class="lang" role="group" aria-label="Γλώσσα / Language">
         <button type="button" class="lang__btn" data-lang="el" aria-pressed="true">ΕΛ</button>
@@ -123,10 +122,10 @@
     <div class="marquee" aria-hidden="true">
       <div class="marquee__track">
         <div class="marquee__group">
-          <span>Booster Packs</span><i>✦</i><span>Booster Boxes</span><i>✦</i><span>Elite Trainer Boxes</span><i>✦</i><span data-i18n="mq.collections">Συλλογές</span><i>✦</i><span>Starter Decks</span><i>✦</i><span>Art</span><i>✦</i><span data-i18n="mq.tournaments">Τουρνουά</span><i>✦</i><span>League Nights</span><i>✦</i>
+          <span>Booster Packs</span><i>✦</i><span>Booster Boxes</span><i>✦</i><span>Elite Trainer Boxes</span><i>✦</i><span>Ultra Premium Collections</span><i>✦</i><span data-i18n="mq.collections">Συλλογές</span><i>✦</i><span>Starter Decks</span><i>✦</i><span>Art</span><i>✦</i><span data-i18n="mq.tournaments">Τουρνουά</span><i>✦</i><span>League Nights</span><i>✦</i>
         </div>
         <div class="marquee__group">
-          <span>Booster Packs</span><i>✦</i><span>Booster Boxes</span><i>✦</i><span>Elite Trainer Boxes</span><i>✦</i><span data-i18n="mq.collections">Συλλογές</span><i>✦</i><span>Starter Decks</span><i>✦</i><span>Art</span><i>✦</i><span data-i18n="mq.tournaments">Τουρνουά</span><i>✦</i><span>League Nights</span><i>✦</i>
+          <span>Booster Packs</span><i>✦</i><span>Booster Boxes</span><i>✦</i><span>Elite Trainer Boxes</span><i>✦</i><span>Ultra Premium Collections</span><i>✦</i><span data-i18n="mq.collections">Συλλογές</span><i>✦</i><span>Starter Decks</span><i>✦</i><span>Art</span><i>✦</i><span data-i18n="mq.tournaments">Τουρνουά</span><i>✦</i><span>League Nights</span><i>✦</i>
         </div>
       </div>
     </div>
@@ -170,6 +169,13 @@
             <svg class="tile__icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="5" width="22" height="22" rx="2"/><path d="m5 22 6-6 5 5 4-4 7 7"/><circle cx="20.500" cy="11.500" r="2"/></svg>
             <h3>Art</h3>
             <p data-i18n="products.art">Έργα τέχνης anime και Pokémon για τον τοίχο, το γραφείο ή τη βιτρίνα σου.</p>
+          </article>
+          <article class="tile tile--wide reveal">
+            <svg class="tile__icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 23 3 10l7 5 6-9 6 9 7-5-2 13zM5 27h22"/></svg>
+            <div>
+              <h3>Ultra Premium Collections</h3>
+              <p data-i18n="products.upc">Οι πιο περιζήτητες συλλεκτικές εκδόσεις: premium κουτιά με αποκλειστικές promo κάρτες και αξεσουάρ, για όσους θέλουν το κάτι παραπάνω.</p>
+            </div>
           </article>
         </div>
 
@@ -277,7 +283,7 @@
     <section class="section" id="visit">
       <div class="wrap">
         <header class="section__head">
-          <p class="eyebrow reveal" data-i18n="visit.eyebrow">Επικοινωνία</p>
+          <p class="eyebrow reveal" data-i18n="visit.eyebrow">Τοποθεσία</p>
           <h2 class="reveal" style="--i:1" data-i18n="visit.title">Έλα να μας βρεις</h2>
         </header>
 
@@ -285,48 +291,26 @@
           <dl class="visit__list reveal">
             <div>
               <dt data-i18n="visit.address.label">Διεύθυνση</dt>
-              <!-- TODO: πραγματική διεύθυνση -->
-              <dd data-todo="address">[Οδός και αριθμός], Λάρισα</dd>
+              <dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Ipsilantou%206%2C%20Larisa%20412%2023%2C%20Greece" target="_blank" rel="noopener" data-i18n="visit.address">Υψηλάντου 6, 412 23 Λάρισα</a></dd>
             </div>
             <div>
               <dt data-i18n="visit.hours.label">Ωράριο</dt>
-              <!-- TODO: ωράριο όταν οριστικοποιηθεί -->
               <dd data-i18n="visit.hours">Θα ανακοινωθεί σύντομα</dd>
-            </div>
-            <div>
-              <dt data-i18n="visit.phone.label">Τηλέφωνο</dt>
-              <!-- TODO: τηλέφωνο, π.χ. <a href="tel:+30241XXXXXXX">2410 XXX XXX</a> -->
-              <dd data-todo="phone">[Τηλέφωνο]</dd>
-            </div>
-            <div>
-              <dt>Email</dt>
-              <!-- TODO: email, π.χ. <a href="mailto:info@holopoint.gr">info@holopoint.gr</a> -->
-              <dd data-todo="email">[Email]</dd>
-            </div>
-            <div>
-              <dt>Social</dt>
-              <dd class="social">
-                <!-- TODO: πραγματικά links στα social -->
-                <a href="#" data-todo="instagram">Instagram</a>
-                <a href="#" data-todo="facebook">Facebook</a>
-                <a href="#" data-todo="tiktok">TikTok</a>
-              </dd>
             </div>
           </dl>
 
-          <div class="map reveal" style="--i:1">
+          <a class="map reveal" style="--i:1" href="https://www.google.com/maps/search/?api=1&amp;query=Ipsilantou%206%2C%20Larisa%20412%2023%2C%20Greece" target="_blank" rel="noopener">
             <div class="map__grid" aria-hidden="true"></div>
             <div class="map__pin" aria-hidden="true">
               <span class="map__pulse"></span>
               <span class="map__pulse map__pulse--late"></span>
-              <svg viewBox="0 0 24 24"><path d="M12 0c.8 7 5 11.200 12 12-7 .8-11.200 5-12 12-.8-7-5-11.200-12-12 7-.8 11.200-5 12-12z"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 0c.8 7 5 11.2 12 12-7 .8-11.2 5-12 12-.8-7-5-11.2-12-12 7-.8 11.2-5 12-12z"/></svg>
             </div>
             <div class="map__label">
-              <strong data-i18n="visit.map.city">Λάρισα, Θεσσαλία</strong>
-              <!-- TODO: αντικατάσταση του query με την ακριβή διεύθυνση -->
-              <a class="btn btn--ghost btn--small" href="https://www.google.com/maps/search/?api=1&query=%CE%9B%CE%AC%CF%81%CE%B9%CF%83%CE%B1" target="_blank" rel="noopener" data-todo="map" data-i18n="visit.map.cta">Άνοιγμα στον χάρτη</a>
+              <strong data-i18n="visit.map.city">Υψηλάντου 6, Λάρισα</strong>
+              <span class="btn btn--ghost btn--small" data-i18n="visit.map.cta">Άνοιγμα στο Google Maps</span>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
@@ -342,8 +326,6 @@
         <p class="footer__tag" data-i18n="footer.tag">Trading card games στη Λάρισα.</p>
       </div>
       <div class="footer__legal">
-        <!-- TODO: νομικά στοιχεία επιχείρησης -->
-        <p data-todo="legal"><span data-i18n="footer.legal.name">Επωνυμία</span>: [Επωνυμία επιχείρησης] · <span data-i18n="footer.legal.vat">ΑΦΜ</span>: [000000000] · <span data-i18n="footer.legal.doy">ΔΟΥ</span>: [ΔΟΥ] · <span data-i18n="footer.legal.gemi">Αρ. Γ.Ε.ΜΗ.</span>: [000000000000]</p>
         <p data-i18n="footer.privacy">Ο ιστότοπος δεν χρησιμοποιεί cookies ούτε εργαλεία παρακολούθησης.</p>
         <p data-i18n="footer.disclaimer">Το Holopoint είναι ανεξάρτητο κατάστημα. Το Pokémon και τα υπόλοιπα ονόματα παιχνιδιών είναι εμπορικά σήματα των αντίστοιχων κατόχων τους.</p>
         <p>© 2026 Holopoint</p>
